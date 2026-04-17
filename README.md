@@ -87,8 +87,12 @@ CSI_MultiTask_Project/
 │       └── BreathingDetection -> ...
 └── utils/
     └── CSI-Bench-Real-WiFi-Sensing-Benchmark-main/
-Example Commands
-Motion Source Recognition (ResNet18, 4-class)
+```
+
+## Example Commands
+
+### Motion Source Recognition (ResNet18, 4-class)
+```text
 python scripts/train_supervised.py \
     --data_dir="/root/autodl-tmp/CSI_MultiTask_Project/data" \
     --task_name="MotionSourceRecognition" \
@@ -102,7 +106,10 @@ python scripts/train_supervised.py \
     --num_workers=0 \
     --test_splits="all" \
     --learning_rate=0.0001
-Room-Level Localization (Transformer)
+```
+    
+### Room-Level Localization (Transformer)
+```text
 python scripts/train_supervised.py \
     --data_dir="/root/autodl-tmp/CSI_MultiTask_Project/data" \
     --task_name="Localization" \
@@ -116,7 +123,10 @@ python scripts/train_supervised.py \
     --num_workers=0 \
     --test_splits="test_id" \
     --learning_rate=0.0001
-Breathing Detection (Transformer)
+```
+    
+### Breathing Detection (Transformer)
+```text
 python scripts/train_supervised.py \
     --data_dir="/root/autodl-tmp/CSI_MultiTask_Project/data" \
     --task_name="BreathingDetection" \
@@ -130,12 +140,14 @@ python scripts/train_supervised.py \
     --num_workers=0 \
     --test_splits="all" \
     --learning_rate=0.0001
-Summary
+```
+    
+## Summary
 
 This repository documents a structured reproduction of CSI-Bench single-task baselines. In particular:
 
-Motion Source Recognition (ResNet18)
-Room-Level Localization (Transformer)
+- Motion Source Recognition (ResNet18)
+- Room-Level Localization (Transformer)
 
 achieved high-fidelity results that are highly consistent with the paper.
 
