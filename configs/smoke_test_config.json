@@ -1,0 +1,23 @@
+{
+    "pipeline": "supervised",
+    "training_dir": "",
+    "output_dir": "./results",
+    "task": "MotionSourceRecognition",
+    "win_len": 500,
+    "feature_size": 232,
+    "seed": 42,
+    "batch_size": 32,
+    "epochs": 2,
+    "test_splits": "all",
+    "available_models": [
+        "mlp",
+        "lstm",
+        "resnet18",
+        "transformer",
+        "vit",
+        "patchtst",
+        "timesformer1d"
+    ],
+    "model": "resnet18",
+    "data_dir": "/root/autodl-tmp/CSI_MultiTask_Project/data"
+}

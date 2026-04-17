@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Models / weights
+*.pt
+*.pth
+*.ckpt
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Experiment outputs
+results/
+results_*/
+logs/
+wandb/
+runs/
+
+# Data
+data/
+dataset/
+datasets/
+
+# Notebook / system
+.ipynb_checkpoints/
+.DS_Store
+*.whl
+*.whl
